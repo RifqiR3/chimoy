@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kasir_page2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="175px"
+        android:background="#d8041c"
+        android:text="KASIR"
+        android:textSize="75px"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="75px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Produk"
+            android:textStyle="bold"
+            android:layout_marginBottom="30px"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px">
+            
+            <TextView
+                android:id="@+id/produk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Chickenroll"
+                android:textStyle="bold"
+                android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.10.000 x 2"
+                android:layout_below="@id/produk1"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/total1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.20.000"
+                android:layout_alignTop="@id/label1"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px">
+
+            <TextView
+                android:id="@+id/produk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Siomay"
+                android:textStyle="bold"
+                android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.10.000 x 2"
+                android:layout_below="@id/produk2"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/total2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.20.000"
+                android:layout_alignTop="@id/label2"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/totalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : Rp.30.000"
+            android:textStyle="bold"
+            android:layout_below="@id/garis"
+            android:layout_marginStart="30dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFDE00"
+            android:text="Masukkan"
+            android:layout_below="@id/totalHarga"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

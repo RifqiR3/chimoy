@@ -18,7 +18,111 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="50px"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50px">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/makanan1"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:src="@drawable/makanan1"/>
+                
+                <TextView
+                    android:id="@+id/namaMakanan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chickenroll"
+                    android:layout_below="@id/makanan1"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/hargaMakanan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.10.000"
+                    android:layout_below="@id/namaMakanan1"
+                    android:layout_marginLeft="7dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/makanan2"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:src="@drawable/makanan2"/>
+
+                <TextView
+                    android:id="@+id/namaMakanan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siomay"
+                    android:layout_below="@id/makanan2"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/hargaMakanan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.10.000"
+                    android:layout_below="@id/namaMakanan2"
+                    android:layout_marginLeft="7dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/makanan3"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:src="@drawable/makanan2"/>
+
+                <TextView
+                    android:id="@+id/namaMakanan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siomay"
+                    android:layout_below="@id/makanan3"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/hargaMakanan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.10.000"
+                    android:layout_below="@id/namaMakanan3"
+                    android:layout_marginLeft="7dp"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
 
 
     </LinearLayout>
