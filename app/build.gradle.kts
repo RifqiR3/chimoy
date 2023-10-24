@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tespushgit"
+    namespace = "com.example.mobileumkm"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.tespushgit"
+        applicationId = "com.example.mobileumkm"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

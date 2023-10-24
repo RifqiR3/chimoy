@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "tesPushGit"
+rootProject.name = "MobileUMKM"
 include(":app")
  
