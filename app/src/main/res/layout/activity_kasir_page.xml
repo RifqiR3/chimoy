@@ -47,7 +47,8 @@
                     android:layout_height="wrap_content"
                     android:text="Chickenroll"
                     android:layout_below="@id/makanan1"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/hargaMakanan1"
@@ -55,7 +56,8 @@
                     android:layout_height="wrap_content"
                     android:text="Rp.10.000"
                     android:layout_below="@id/namaMakanan1"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
             </RelativeLayout>
 
@@ -77,7 +79,8 @@
                     android:layout_height="wrap_content"
                     android:text="Siomay"
                     android:layout_below="@id/makanan2"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/hargaMakanan2"
@@ -85,7 +88,8 @@
                     android:layout_height="wrap_content"
                     android:text="Rp.10.000"
                     android:layout_below="@id/namaMakanan2"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
 
             </RelativeLayout>
@@ -97,29 +101,34 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/makanan3"
+                    android:id="@+id/makanan2"
                     android:layout_width="250px"
                     android:layout_height="250px"
                     android:src="@drawable/makanan2"/>
 
                 <TextView
-                    android:id="@+id/namaMakanan3"
+                    android:id="@+id/namaMakanan2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Siomay"
-                    android:layout_below="@id/makanan3"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_below="@id/makanan2"
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/hargaMakanan3"
+                    android:id="@+id/hargaMakanan2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Rp.10.000"
-                    android:layout_below="@id/namaMakanan3"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_below="@id/namaMakanan2"
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"/>
 
 
             </RelativeLayout>
+
+
+
 
         </LinearLayout>
 
