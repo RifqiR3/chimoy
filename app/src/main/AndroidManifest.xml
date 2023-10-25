@@ -25,10 +25,10 @@
             android:name=".kasir_page"
             android:exported="false" />
         <activity
-            android:name=".login_page"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

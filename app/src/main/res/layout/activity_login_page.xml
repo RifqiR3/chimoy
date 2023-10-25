@@ -30,20 +30,52 @@
             android:text="Silahkan Piluh Outlet dan Karyawan"
             android:textColor="@color/white"
             android:textSize="14sp"
-            />
+            android:layout_marginBottom="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Outlet"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsernameReg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
 
-
-            </com.google.android.material.textfield.TextInputEditText>
-            
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Karyawan"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/karyawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#FFDE00"
+            android:text="Masuk"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="end"/>
+
+
     </LinearLayout>
 
 
