@@ -2,6 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TesPushGit" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <!--    primary brand color    -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 

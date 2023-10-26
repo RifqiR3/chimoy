@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple">#8692F7</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="orange">#FFA500</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="gray">#808080</color>
+    <color name="brown">#A52A2A</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="biru_muda">#20aae2</color>
+    <color name="biru_tua">#2e5abd</color>
+    <color name="cram">#f4c5d5</color>
+    <color name="gold">#f1dd54</color>
+    <color name="lavender">#8692f7</color>
 </resources>
