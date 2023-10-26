@@ -33,7 +33,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="50dp"
             app:cardBackgroundColor="#fffcd4"
             app:cardCornerRadius="5dp"
             app:cardElevation="10dp">
@@ -103,10 +103,32 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="5dp"
             app:cardElevation="10dp"
             >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/totalJual1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Penjualan"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/totalHarga1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.50.000"
+                    android:layout_below="@+id/totalJual1"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
