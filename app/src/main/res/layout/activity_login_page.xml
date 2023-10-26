@@ -37,15 +37,16 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Outlet"
-            android:textColorHint="@color/white"
-            app:hintTextColor="@color/white"
-            app:boxStrokeColor="@color/white">
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUsernameReg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,15 +55,16 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Karyawan"
-            android:textColorHint="@color/white"
-            app:hintTextColor="@color/white"
-            app:boxStrokeColor="@color/white">
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/karyawan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
