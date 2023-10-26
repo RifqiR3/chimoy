@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="kuningPucat">#fffcd4</color>
+    <color name="kuningJadi">#FFDE00</color>
+
 </resources>
