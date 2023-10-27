@@ -44,17 +44,17 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         }
 
         if  (id == R.id.nav_history){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HistoryFragment()).commit();
             return  true;
         }
 
         if  (id == R.id.nav_money){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MoneyFragment()).commit();
             return  true;
         }
 
         if  (id == R.id.nav_box){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProductFragment()).commit();
             return  true;
         }
 
