@@ -15,7 +15,6 @@
         <activity
             android:name=".landing_page"
             android:exported="false" />
-
         <activity
             android:name=".riwayat_page"
             android:exported="false" />
@@ -31,15 +30,21 @@
         <activity
             android:name=".laporan_keuangan_page"
             android:exported="false" />
+
         <activity
             android:name=".Side_Bar"
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".login_page"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

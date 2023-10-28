@@ -17,7 +17,6 @@ public class login_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
-
         // Inisialisasi elemen UI, seperti outletEditText dan karyawanEditText, di sini
         outletEditText = findViewById(R.id.etUsernameReg);
         karyawanEditText = findViewById(R.id.karyawan);
