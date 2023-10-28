@@ -32,13 +32,11 @@ public class login_page extends AppCompatActivity {
                 // Lakukan verifikasi outlet dan karyawan (sesuai logika aplikasi Anda)
 
                 // Contoh sederhana verifikasi
-                boolean verifikasiBerhasil = (outlet.equals("outlet yang benar") && karyawan.equals("karyawan yang benar"));
+//                boolean verifikasiBerhasil = (outlet.equals("outlet yang benar") && karyawan.equals("karyawan yang benar"));
 
                 // Jika verifikasi berhasil, pindahkan pengguna ke halaman kasir_page
-                if (verifikasiBerhasil) {
-                    Intent intent = new Intent(login_page.this, kasir_page.class);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(login_page.this, Side_Bar.class);
+                startActivity(intent);
             }
         });
     }
