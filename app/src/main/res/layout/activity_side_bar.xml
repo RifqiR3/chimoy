@@ -15,9 +15,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:id="@+id/toolbar"
             android:elevation="4dp"
             app:title="Laporan Keuangan"
             android:background="@color/red"
