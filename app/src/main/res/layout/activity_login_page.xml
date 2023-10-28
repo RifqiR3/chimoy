@@ -72,6 +72,7 @@
             android:layout_width="120dp"
             android:layout_height="40dp"
             android:backgroundTint="#FFDE00"
+            android:id="@+id/btnMasuk"
             android:text="Masuk"
             android:textColor="@color/black"
             android:textStyle="bold"
