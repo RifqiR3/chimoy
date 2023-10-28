@@ -26,7 +26,7 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
@@ -34,7 +34,7 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if  (id == R.id.nav_home){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
             return  true;
         }
 
@@ -54,7 +54,7 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         }
 
         if  (id == R.id.nav_box){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
             return  true;
         }
 
