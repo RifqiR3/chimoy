@@ -14,7 +14,6 @@ public class laporan_keuangan_page extends AppCompatActivity {
     private CardView cardViewMingguIni;
     private CardView cardViewBulanIni;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

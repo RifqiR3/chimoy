@@ -7,15 +7,6 @@
     tools:context=".laporan_keuangan_page"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="175px"
-        android:background="#d8041c"
-        android:text="Laporan Keuangan"
-        android:textSize="75px"
-        android:textColor="@color/white"
-        android:gravity="center"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
