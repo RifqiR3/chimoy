@@ -138,7 +138,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/img_1"
+                            android:src="@drawable/img"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"/>
 

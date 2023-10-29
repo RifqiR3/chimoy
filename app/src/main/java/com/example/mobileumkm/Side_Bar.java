@@ -71,8 +71,8 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         }
 
         if  (id == R.id.nav_box){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProductFragment()).commit();
-            setToolbarTitle("Kasir");
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new top_produk()).commit();
+            setToolbarTitle("Top Produk");
             return  true;
         }
 
