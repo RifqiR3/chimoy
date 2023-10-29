@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TesPushGit"
         tools:targetApi="31">
         <activity
-            android:name=".landing_page"
+            android:name=".login_page"
             android:exported="false" />
         <activity
             android:name=".riwayat_page"
@@ -30,14 +30,12 @@
         <activity
             android:name=".laporan_keuangan_page"
             android:exported="false" />
-
         <activity
             android:name=".Side_Bar"
             android:exported="false" >
         </activity>
-
         <activity
-            android:name=".login_page"
+            android:name=".landing_page"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
