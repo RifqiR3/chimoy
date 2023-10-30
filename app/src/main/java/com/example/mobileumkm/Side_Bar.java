@@ -19,6 +19,7 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_side_bar);
 
+
         Toolbar toolbar = findViewById(R.id.toolbar); //Inisialisasi toolbar
         setSupportActionBar(toolbar);
 
@@ -53,8 +54,8 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         }
 
         if  (id == R.id.nav_shop){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
-            setToolbarTitle("Kasir");
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_page2()).commit();
+            setToolbarTitle("Keranjang");
             return  true;
         }
 

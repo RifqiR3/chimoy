@@ -18,7 +18,7 @@ public class login_page extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         // Inisialisasi elemen UI, seperti outletEditText dan karyawanEditText, di sini
-        outletEditText = findViewById(R.id.etUsernameReg);
+        outletEditText = findViewById(R.id.outlet);
         karyawanEditText = findViewById(R.id.karyawan);
 
         Button masukButton = findViewById(R.id.btnMasuk);
@@ -36,6 +36,8 @@ public class login_page extends AppCompatActivity {
 
                 // Jika verifikasi berhasil, pindahkan pengguna ke halaman kasir_page
                 Intent intent = new Intent(login_page.this, Side_Bar.class);
+                intent.putExtra("outlet", outlet);
+                intent.putExtra("karyawan", karyawan);
                 startActivity(intent);
             }
         });
