@@ -8,11 +8,13 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     private Toolbar toolbar; // Tambah referensi toolbar
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,35 +52,41 @@ public class Side_Bar extends AppCompatActivity implements NavigationView.OnNavi
         if  (id == R.id.nav_home){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_frag()).commit();
             setToolbarTitle("Kasir");
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 
         if  (id == R.id.nav_shop){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new kasir_page2()).commit();
             setToolbarTitle("Keranjang");
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 
         if  (id == R.id.nav_history){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HistoryFragment()).commit();
             setToolbarTitle("Riwayat");
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 
         if  (id == R.id.nav_money){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MoneyFragment()).commit();
             setToolbarTitle("Laporan Keuangan");
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 
         if  (id == R.id.nav_box){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new top_produk()).commit();
             setToolbarTitle("Top Produk");
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 
         if  (id == R.id.nav_logout){
             Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
+            drawerLayout.closeDrawer(GravityCompat.START);
             return  true;
         }
 

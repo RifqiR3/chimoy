@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "75662095057",
+    "firebase_url": "https://aplikasi-mobile-umkm-default-rtdb.firebaseio.com",
+    "project_id": "aplikasi-mobile-umkm",
+    "storage_bucket": "aplikasi-mobile-umkm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75662095057:android:0e5133956a83ee2a944bf0",
+        "android_client_info": {
+          "package_name": "com.example.mobileumkm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4BjXmcdakcms8-aCplYfnTxLZvmW1urY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
