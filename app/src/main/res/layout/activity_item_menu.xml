@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:id="@+id/card_listitem">
+
+    <RelativeLayout
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:id="@+id/iv_makanan"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/makanan1"/>
+
+        <TextView
+            android:id="@+id/tv_namaMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chickenroll"
+            android:layout_toRightOf="@id/iv_makanan"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_hargaMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp.10.000"
+            android:layout_toRightOf="@id/iv_makanan"
+            android:layout_below="@id/tv_namaMakanan"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_Makanan"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFDE00"
+            android:layout_toRightOf="@id/iv_makanan"
+            android:layout_below="@+id/tv_hargaMakanan"
+            android:text="Masukkan"
+            android:layout_gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

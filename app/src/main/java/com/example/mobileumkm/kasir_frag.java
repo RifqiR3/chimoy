@@ -27,16 +27,16 @@ public class kasir_frag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.activity_kasir_page, container, false);
+        View view = inflater.inflate(R.layout.activity_item_menu, container, false);
 
-        txtMenu1 = view.findViewById(R.id.namaMakanan1);
-        txtHrgMenu1 = view.findViewById(R.id.hargaMakanan1);
-        txtCartMenu1 = view.findViewById(R.id.menuKeranjang1);
-        txtCartItem1 = view.findViewById(R.id.jmlItem1);
-        txtCartHarga1 = view.findViewById(R.id.hrgItem1);
+        txtMenu1 = view.findViewById(R.id.tv_namaMakanan);
+        txtHrgMenu1 = view.findViewById(R.id.tv_hargaMakanan);
+//        txtCartMenu1 = view.findViewById(R.id.menuKeranjang1);
+//        txtCartItem1 = view.findViewById(R.id.jmlItem1);
+//        txtCartHarga1 = view.findViewById(R.id.hrgItem1);
 
-        buttonContainer = view.findViewById(R.id.buttonContainer);
-        btnMenu1 = view.findViewById(R.id.buttonMakanan1);
+//        buttonContainer = view.findViewById(R.id.buttonContainer);
+        btnMenu1 = view.findViewById(R.id.btn_Makanan);
         btnMenu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

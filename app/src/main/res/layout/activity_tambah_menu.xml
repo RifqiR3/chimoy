@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TambahMenu">
+    
+    <EditText
+        android:id="@+id/ed_addmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan nama menu"
+        android:importantForAutofill="no"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+    <ImageView
+        android:id="@+id/iv_addimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <!-- Button untuk memilih gambar dari galeri -->
+    <Button
+        android:id="@+id/btn_choseimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Gambar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/ed_addharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan harga menu"
+        android:importantForAutofill="no"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_menubaru"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="TAMBAH"
+        android:layout_marginLeft="98dp"
+        android:textSize="18dp">
+
+    </Button>
+</LinearLayout>
