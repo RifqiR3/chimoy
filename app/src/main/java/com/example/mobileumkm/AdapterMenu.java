@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -36,7 +37,14 @@ public class AdapterMenu extends RecyclerView.Adapter<AdapterMenu.MyViewMenu>{
 
     @Override
     public void onBindViewHolder(@NonNull MyViewMenu holder, int position) {
+        ModelMenu menu = mList.get(position);
 
+        // Set data ke elemen tata letak
+        holder.tv_namaMakanan.setText(menu.getNama_menu());
+        Picasso.get().load(menu.getNama_gambar()).into(holder.iv_makanan);
+        holder.tv_hargaMakanan.setText("Rp. " + menu.getHarga_menu());
+
+        // Mengatur OnClickListener untuk tombol masukkan
     }
 
     @Override
@@ -49,9 +57,15 @@ public class AdapterMenu extends RecyclerView.Adapter<AdapterMenu.MyViewMenu>{
         TextView tv_namaMakanan, tv_hargaMakanan;
         Button btn_Makanan;
         CardView card_listitem;
+
         public MyViewMenu(@NonNull View itemView) {
             super(itemView);
 
+            iv_makanan = itemView.findViewById(R.id.iv_makanan);
+            tv_namaMakanan = itemView.findViewById(R.id.tv_namaMakanan);
+            tv_hargaMakanan = itemView.findViewById(R.id.tv_hargaMakanan);
+            btn_Makanan = itemView.findViewById(R.id.btn_Makanan);
+            card_listitem = itemView.findViewById(R.id.card_listitem);
         }
     }
 }
