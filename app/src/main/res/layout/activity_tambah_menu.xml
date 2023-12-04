@@ -7,18 +7,53 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".TambahMenu">
-    
-    <EditText
-        android:id="@+id/ed_addmenu"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukan nama menu"
-        android:importantForAutofill="no"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
-    </EditText>
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Tambah Data"
+            android:layout_marginRight="18dp"
+            android:textStyle="bold"
+            android:textSize="20dp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:elevation="9dp"
+        android:background="DFDFDFDF"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ip_addmenu"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Masukan nama menu"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
     <ImageView
         android:id="@+id/iv_addimage"
         android:layout_width="match_parent"
@@ -39,17 +74,27 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
-    <EditText
-        android:id="@+id/ed_addharga"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukan harga menu"
-        android:importantForAutofill="no"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
-    </EditText>
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ip_addharga"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Masukan harga menu"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
         android:id="@+id/btn_menubaru"

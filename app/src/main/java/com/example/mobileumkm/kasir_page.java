@@ -27,8 +27,7 @@ import java.util.ArrayList;
 
 public class kasir_page extends AppCompatActivity {
     FloatingActionButton tambah;
-    AdapterMenu adapterMenu;
-    DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+//    AdapterMenu adapterMenu;
     ArrayList<ModelMenu> listMneu;
     RecyclerView tv_listmenu;
 
@@ -38,39 +37,8 @@ public class kasir_page extends AppCompatActivity {
         setContentView(R.layout.activity_kasir_page);
 
         tambah = findViewById(R.id.btn_tambahdata);
-        tambah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(kasir_page.this, TambahMenu.class));
-            }
-        });
         tv_listmenu = findViewById(R.id.tv_listmenu);
-        RecyclerView.LayoutManager mLayout = new LinearLayoutManager(this);
-        tv_listmenu.setLayoutManager(mLayout);
-        tv_listmenu.setItemAnimator(new DefaultItemAnimator());
-
-        tampilData();
     }
 
-    private void tampilData() {
-        database.child("Menu").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                listMneu = new ArrayList<>();
-                for (DataSnapshot item : snapshot.getChildren()){
-                    ModelMenu menu = item.getValue(ModelMenu.class);
-                    menu.setKey(item.getKey());
-                    listMneu.add(menu);
-                }
-                adapterMenu = new AdapterMenu(listMneu, kasir_page.this);
-                tv_listmenu.setAdapter(adapterMenu);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
 }
 
