@@ -30,6 +30,9 @@
         <activity
             android:name=".kasir_page2"
             android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".TambahMenu"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".kasir_page"
             android:exported="false" />
